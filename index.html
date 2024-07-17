@@ -151,19 +151,27 @@ An ecosystem of unique yield strategies that help you earn yield, amplify, and s
 
     </div>
     <script>
-        document.getElementById("menuIcon").addEventListener("click", function () {
-            this.classList.toggle("crossline1");
-            document.querySelector(".mobile-view").classList.toggle("left-minus-100");
-            document.querySelector(".mobile-view").classList.toggle("left-0");
-        });
+   document.getElementById("menuIcon").addEventListener("click", function () {
+    this.classList.toggle("crossline1");
+    document.querySelector(".mobile-view").classList.toggle("left-minus-100");
+    document.querySelector(".mobile-view").classList.toggle("left-0");
+    
+    if (document.querySelector(".mobile-view").classList.contains("left-0")) {
+        document.body.classList.add("overflow_hidden");
+    } else {
+        document.body.classList.remove("overflow_hidden");
+    }
+});
 
-        document.querySelectorAll(".mobile-view li").forEach(function (li) {
-            li.addEventListener("click", function () {
-                document.getElementById("menuIcon").classList.toggle("crossline1");
-                document.querySelector(".mobile-view").classList.toggle("left-minus-100");
-                document.querySelector(".mobile-view").classList.toggle("left-0");
-            });
-        });
+document.querySelectorAll(".mobile-view li").forEach(function (li) {
+    li.addEventListener("click", function () {
+        document.getElementById("menuIcon").classList.toggle("crossline1");
+        document.querySelector(".mobile-view").classList.toggle("left-minus-100");
+        document.querySelector(".mobile-view").classList.toggle("left-0");
+        
+        document.body.classList.remove("overflow_hidden");
+    });
+});
     </script>
     <script src="./assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

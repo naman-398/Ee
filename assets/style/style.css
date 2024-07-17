@@ -151,19 +151,19 @@ body {
   width: 100px !important;
   display: block;
 }
-.navlinks::after{
-    position: absolute;
-    content: "";
-    width: 0;
-    left: 50%;
-    transition: all 300ms linear;
-    background: white;
-    height: 1.5px;
-    bottom: 0;
+.navlinks::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 50%;
+  transition: all 300ms linear;
+  background: white;
+  height: 1.5px;
+  bottom: 0;
 }
-.navlinks:hover::after{
-    width: 100%;
-    left: 0;
+.navlinks:hover::after {
+  width: 100%;
+  left: 0;
 }
 /* <!-- =========================================    HERO SECTION   ================================================== --> */
 .hero-para {
@@ -346,7 +346,9 @@ body {
   .left-minus-100 {
     left: -100%;
   }
-
+  .overflow_hidden {
+    overflow: hidden;
+  }
   .crossline1 .naviconline1 {
     transform: rotate(45deg) translate(12px, 15px);
   }
