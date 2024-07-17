@@ -169,6 +169,20 @@ body {
   width: 100px !important;
   display: block;
 }
+.navlinks::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 50%;
+    transition: all 300ms linear;
+    background: white;
+    height: 1.5px;
+    bottom: 0;
+}
+.navlinks:hover::after{
+    width: 100%;
+    left: 0;
+}
 /* <!-- =========================================    HERO SECTION   ================================================== --> */
 .hero-para {
   max-width: 524px;
