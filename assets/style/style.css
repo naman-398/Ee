@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+:root {
+  /* --------------------   FONT SIZE   --------------------------- */
+  --fs-xs: 14px;
+  --fs-sm: 18px;
+  --fs-lg: 28px;
+  --fs-xl: 46px;
+  /* --------------------   COLOR   --------------------------- */
+  --persian-blue: #1643c3;
+  --air-force-blue: #002f93;
+  /* --------------------   LINE HEIGHT   --------------------------- */
+  --lh-160: 160%;
+  --lh-120: 120%;
+  --lh-150: 150%;
+  --lh-117: 117%;
+  --lh-112: 112.6%;
+}
+/* <!-- =========================================        FONT SIZE         ================================================== --> */
+.fs-xs {
+  font-size: var(--fs-xs);
+}
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+/* <!-- =========================================     LINE HEIGHT     ================================================== --> */
+.line-height-160 {
+  line-height: var(--lh-160);
+}
+.line-height-112 {
+  line-height: var(--lh-112);
+}
+.line-height-150 {
+  line-height: var(--lh-150);
+}
+.line-height-120 {
+  line-height: var(--lh-120);
+}
+.line-height-117 {
+  line-height: var(--lh-117);
+}
+/* <!-- =========================================     FONT FAMILY     ================================================== --> */
+@font-face {
+  font-family: "neuemachinalight";
+  src: url("../font-family/NeueMachina-Light.otf");
+}
+
+@font-face {
+  font-family: "neuemachinaregular";
+  src: url("../font-family/NeueMachina-Regular.otf");
+}
+
+@font-face {
+  font-family: "neuemachinaultrabold";
+  src: url("../font-family/NeueMachina-Ultrabold.otf");
+}
+
+.ff-neuemachina-light {
+  font-family: "neuemachinalight";
+}
+
+.ff-neuemachina-regular {
+  font-family: "neuemachinaregular";
+}
+
+.ff-neuemachina-bold {
+  font-family: "neuemachinaultrabold";
+}
+.ff-raleway {
+  font-family: "Raleway", sans-serif;
+}
+.ff-plus-jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+/* <!-- =========================================        HEADER       ================================================== --> */
+body {
+  max-width: 1920px;
+  margin: 0 auto !important;
+}
+.header-bg {
+  background-image: url(../images/webp/header-bg.webp);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 19px;
+}
+.header-bg::after {
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(179.27deg, #1643c3 0.63%, #000000 175.69%);
+  opacity: 74%;
+  bottom: 0;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  mix-blend-mode: color;
+}
+.dots {
+  right: 4%;
+  top: 10%;
+  gap: 23.22px;
+  z-index: 0;
+}
+.blue-dot {
+  width: 10.33px;
+  height: 10.33px;
+  border-radius: 50%;
+  background: var(--air-force-blue);
+}
+/* <!-- =========================================        NAVBAR       ================================================== --> */
+.nav-padding-y {
+  padding: 14px 0 2px 0;
+}
+.gap-between-navlinks-button {
+  gap: 11px;
+}
+.nav-button {
+  color: var(--persian-blue);
+  padding: 11.5px 31px;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: var(--persian-blue);
+  transition: all 300ms linear;
+}
+.nav-button:hover {
+  background-color: var(--persian-blue) !important;
+  color: white;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--persian-blue) !important;
+  color: white;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  width: 120px;
+}
+.dropdown-menu li {
+  padding: 8px 12px;
+  width: 100px !important;
+}
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  width: 100px !important;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-menu li a:hover {
+  background-color: var(--persian-blue) !important;
+  width: 100px !important;
+}
+
+.dropdown.open .dropdown-menu {
+  width: 100px !important;
+  display: block;
+}
+/* <!-- =========================================    HERO SECTION   ================================================== --> */
+.hero-para {
+  max-width: 524px;
+  margin-top: 30px;
+}
+.padding-t-hero-heading {
+  padding-top: 42px;
+}
+.hero-robot {
+  width: 100%;
+  height: 100%;
+}
+.audited-bottom-line::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  bottom: 3px;
+  left: 0;
+}
+/* <!-- ===================================    AMPLIFY AND STRECTED GAINS      ========================================== --> */
+.bg-amplify {
+  background-image: url(../images/webp/bg-bull-bear-sm.webp);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 416px;
+}
+.amplify-heading {
+  padding-top: 11px;
+}
+.amplify-para {
+  max-width: 554px;
+}
+.bg-blue {
+  background-color: var(--persian-blue);
+}
+.cloud {
+  bottom: -8%;
+  left: 0;
+  width: 100%;
+}
+/* <!-- =========================================    MEDIA SCREEN   ================================================== --> */
+
+@media (min-width: 576px) {
+  :root {
+    --fs-xs: 14px;
+    --fs-sm: 18px;
+    --fs-lg: 46px;
+    --fs-xl: 56px;
+  }
+  .cloud {
+    bottom: -10%;
+  }
+  .bg-amplify {
+    background-image: url(../images/webp/bg-bull-bear.webp);
+    min-height: 470px;
+  }
+  .amplify-heading {
+    padding-top: 22px;
+  }
+  .header-bg {
+    padding-bottom: 49px;
+  }
+  .padding-t-hero-heading {
+    padding-top: 72px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --fs-xs: 14px;
+    --fs-sm: 18px;
+    --fs-lg: 40px;
+    --fs-xl: 72px;
+  }
+  .cloud {
+    bottom: -10%;
+  }
+  .amplify-heading {
+    padding-top: 28px;
+  }
+  .bg-amplify {
+    min-height: 504px;
+  }
+  .hero-robot {
+    height: 1007px;
+  }
+  .header-bg {
+    padding-bottom: 69px;
+  }
+  .padding-t-hero-heading {
+    padding-top: 132px;
+  }
+}
+@media (min-width: 992px) {
+  .header-bg {
+    background-position: center;
+    min-height: 905px;
+    padding-bottom: unset;
+  }
+  .cloud {
+    bottom: -11%;
+  }
+  .hero-robot {
+    height: 100%;
+  }
+  .bg-amplify {
+    min-height: 833px;
+  }
+  .gap-between-navlinks-button {
+    gap: 50px;
+  }
+  :root {
+    --fs-xs: 14px;
+    --fs-sm: 18px;
+    --fs-lg: 52px;
+    --fs-xl: 85px;
+  }
+}
+@media (min-width: 1200px) {
+  .gap-between-navlinks-button {
+    gap: 107.5px;
+  }
+  .dots {
+    top: 5%;
+  }
+  .hero-robot {
+    transform: translate(-85px, -70px);
+    width: 631px;
+    height: 887px;
+  }
+  .padding-t-hero-heading {
+    padding-top: 162px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .container {
+    max-width: 1164px !important;
+  }
+}
+@media (max-width: 991.9px) {
+  .menu-icon {
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    position: relative;
+    z-index: 5;
+    transition: all 300ms linear;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .menu-icon span {
+    width: 100%;
+    height: 3px;
+    background: white;
+    transition: all 300ms linear;
+  }
+  .mobile-view {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    z-index: 4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--persian-blue);
+    transition: all 300ms linear;
+  }
+  .left-0 {
+    left: 0;
+  }
+  .left-minus-100 {
+    left: -100%;
+  }
+  .d-none {
+    display: none;
+  }
+  .d-block {
+    display: block;
+  }
+  .crossline1 .naviconline1 {
+    transform: rotate(45deg) translate(12px, 15px);
+  }
+  .crossline1 .naviconline2 {
+    opacity: 0;
+  }
+  .crossline1 .naviconline3 {
+    transform: rotate(-45deg) translate(-3px, 0px);
+  }
+  .nav-button {
+    color: white;
+    border-color: white;
+  }
+}
