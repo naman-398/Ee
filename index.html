@@ -49,7 +49,7 @@ An ecosystem of unique yield strategies that help you earn yield, amplify, and s
                     <img src="./assets/images/svg/page-logo.svg" alt="page-logo">
                 </a>
                 <div class="d-flex align-items-center gap-between-navlinks-button">
-                    <ul class="d-lg-flex align-items-center gap-4 mb-0 ps-0 mobile-view left-minus-100 d-none">
+                    <ul class="d-lg-flex align-items-center gap-4 mb-0 ps-0 mobile-view left-minus-100">
                         <li class="list-unstyled">
                             <a href="#" class="ff-raleway text-white text-decoration-none fw-medium fs-6 position-relative navlinks">About</a>
                         </li>
@@ -108,7 +108,7 @@ An ecosystem of unique yield strategies that help you earn yield, amplify, and s
             <!-- =====================================        HERO            ================================================== -->
             <section>
                 <div class="row">
-                    <div class="col-lg-6 col-12 padding-t-hero-heading position-relative z-3">
+                    <div class="col-lg-6 col-12 padding-t-hero-heading position-relative z-0">
                         <h1
                             class="ff-neuemachina-regular text-white fw-medium fs-xl line-height-112 text-center text-lg-start mb-0">
                             BUILDING ELASTIC
@@ -155,7 +155,6 @@ An ecosystem of unique yield strategies that help you earn yield, amplify, and s
             this.classList.toggle("crossline1");
             document.querySelector(".mobile-view").classList.toggle("left-minus-100");
             document.querySelector(".mobile-view").classList.toggle("left-0");
-            document.querySelector(".mobile-view").classList.toggle("d-none");
         });
 
         document.querySelectorAll(".mobile-view li").forEach(function (li) {
@@ -163,7 +162,6 @@ An ecosystem of unique yield strategies that help you earn yield, amplify, and s
                 document.getElementById("menuIcon").classList.toggle("crossline1");
                 document.querySelector(".mobile-view").classList.toggle("left-minus-100");
                 document.querySelector(".mobile-view").classList.toggle("left-0");
-                document.querySelector(".mobile-view").classList.toggle("d-none");
             });
         });
     </script>
